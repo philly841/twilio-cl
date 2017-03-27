@@ -11,9 +11,10 @@ post '/sms' do
     "Partnerships" => "Philip views strategic partnerships as a key strategy for companies to maximize their solution capabilities, customer experience, and top-line growth in a resource-efficient manner. Beyond traditional M&A and venture investments, he spearheaded a customer migration project with one of Cornerstone's reseller partners and has also driven several Business Development initiatives including discussions with partners leveraging Cornerstone's client base and sales channels.",
     "Work Style" => "Philip is results-driven, and likes building consensus and collaboration with other stakeholders to achieve success.  He works well independently to hit deadlines but believes that open communication is important to ensure everyone agrees on how to proceed.  He has worked closely with Finance & Accounting, Product, Sales, Marketing, HR, and Tech teams while at Cornerstone.",
     "Industry Experience" => "Philip's been in tech since he graduated from UC Berkeley and has over 9 years of total industry experince, with the last 7 years working directly with cloud companies as an investment banker and in Corporate Development. He has worked with companies with similar business models to Twilio's such as ExactTarget, and appreciates the usage based model in aligning customer interests with that of the company's.",
+    "MBA" => "Alas, Philip does not have an MBA (yet). He took the GMAT a few years ago and scored 750, but has had great growth opportunities in his career and hasn't yet found the chance to return to school.",
     "More" => "Sounds like it may be worth having a quick phone call with Philip.  He'd love to tell you more in person!"
   }
-  message = subjects[topic] || "Sorry, that was unclear, please respond with Product, Partnerships, Work Style, Industry Experience or More."
+  message = subjects[topic] || "Sorry, that was unclear, please respond with Product, Partnerships, Work Style, Industry Experience, MBA or More."
   twiml = Twilio::TwiML::Response.new do |r|
     r.Message message
   end
